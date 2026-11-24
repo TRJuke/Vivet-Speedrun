@@ -1,0 +1,4 @@
+* text=auto eol=lf
+src/main/resources/** -text
+*.jar binary
+*.png binary

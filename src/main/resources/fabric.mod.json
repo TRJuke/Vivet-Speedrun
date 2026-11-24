@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "vivet_speedrun",
+  "version": "${version}",
+  "name": "Vivet Speedrun",
+  "description": "The game picks an item from your chosen difficulty. Find it. Play solo or multiplayer. There's enough content to enjoy both. Good luck!",
+  "authors": [
+    "TRJuke"
+  ],
+  "license": "ARR",
+  "icon": "assets/vivet_speedrun/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.vivet.speedrun.VivetSpeedrun"
+    ],
+    "client": [
+      "com.vivet.speedrun.client.VivetSpeedrunClient"
+    ]
+  },
+  "mixins": [
+    "vivet_speedrun.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
